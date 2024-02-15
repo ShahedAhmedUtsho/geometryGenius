@@ -122,10 +122,10 @@ function calculateRhombusArea() {
     }
 
 
-    let area = rhomD1Value * rhomD2Value + "cm2";
+    let area = (rhomD1Value * rhomD2Value) /2+ "cm2";
     document.getElementById('rhomSpan').innerText = area;
     let newEl = document.createElement('li');
-    newEl.innerText = ` rhombusArea : d1: ${rhomD1Value} , d2: ${rhomD2Value} = ${rhomD1Value * rhomD2Value + "cm2"}  `;
+    newEl.innerText = ` rhombusArea : d1: ${rhomD1Value} , d2: ${rhomD2Value} = ${(rhomD1Value * rhomD2Value)/2 + "cm2"}  `;
 
     document.getElementById('asideUl').appendChild(newEl);
 
